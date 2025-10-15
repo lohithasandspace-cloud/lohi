@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>📰 Fake News Detector</h1>
+
+<form action="/predict" method="post">
+  <textarea name="news" placeholder="Enter your news text here..." required></textarea><br>
+  <button type="submit">Check Authenticity</button>
+</form>
+
+{% if prediction_text %}
+  <div class="result-box">
+    <h3>{{ prediction_text }}</h3>
+  </div>
+{% endif %}
+{% endblock %}

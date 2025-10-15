@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title if title else "Fake News Detector" }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/">🏠 Home</a>
+    <a href="/dashboard">📊 Dashboard</a>
+  </nav>
+
+  <div class="content">
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
