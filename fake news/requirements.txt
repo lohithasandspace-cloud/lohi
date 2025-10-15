@@ -1,3 +1,8 @@
-git add requirements.txt
-git commit -m "Added requirements.txt for Render deployment"
-git push origin main
+Flask==3.0.3
+tensorflow==2.16.1
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+keras==3.3.3
+gunicorn==22.0.0
+pickle-mixin
